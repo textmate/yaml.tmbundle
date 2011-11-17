@@ -7,10 +7,6 @@
 		<string>yaml</string>
 		<string>yml</string>
 	</array>
-	<key>foldingStartMarker</key>
-	<string>^[^#]\s*.*:(\s*\[?| &amp;.+)?$</string>
-	<key>foldingStopMarker</key>
-	<string>^\s*$|^\s*\}|^\s*\]|^\s*\)</string>
 	<key>keyEquivalent</key>
 	<string>^~Y</string>
 	<key>name</key>
