@@ -431,18 +431,33 @@
 		<dict>
 			<key>begin</key>
 			<string>&lt;%+(?!&gt;)=?</string>
-			<key>captures</key>
+			<key>beginCaptures</key>
 			<dict>
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.embedded.ruby</string>
+					<string>punctuation.definition.embedded.begin.ruby</string>
 				</dict>
 			</dict>
+			<key>contentName</key>
+			<string>source.ruby.rails</string>
 			<key>end</key>
-			<string>%&gt;</string>
+			<string>(%)&gt;</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.embedded.end.ruby</string>
+				</dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>source.ruby.rails</string>
+				</dict>
+			</dict>
 			<key>name</key>
-			<string>source.ruby.rails.embedded.html</string>
+			<string>meta.embedded.line.ruby</string>
 			<key>patterns</key>
 			<array>
 				<dict>
