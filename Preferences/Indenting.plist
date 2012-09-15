@@ -14,6 +14,8 @@
 		<true/>
 		<key>increaseIndentPattern</key>
 		<string>^\s*.*(:|-) ?(&amp;\w+)?(\{[^}"']*|\([^)"']*)?$</string>
+		<key>indentOnPaste</key>
+		<string>simple</string>
 	</dict>
 	<key>uuid</key>
 	<string>78CB70FF-5071-11DA-B402-000A95AF0064</string>
