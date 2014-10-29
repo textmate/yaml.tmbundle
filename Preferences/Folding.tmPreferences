@@ -8,10 +8,25 @@
 	<string>source.yaml</string>
 	<key>settings</key>
 	<dict>
-		<key>foldingStartMarker</key>
-		<string>^[^#]\s*.*:(\s*\[?| &amp;.+)?$</string>
-		<key>foldingStopMarker</key>
-		<string>^\s*$|^\s*\}|^\s*\]|^\s*\)</string>
+		<key>foldingIndentedBlockIgnore</key>
+		<string>^\s*#</string>
+		<key>foldingIndentedBlockStart</key>
+		<string>(?x)
+    (?# We can fold a mapping which contains multiple mappings or items. In 
+        such a mapping there can be — at least — the following items after the 
+        key and the colon: 
+            1. An anchor label — marked by the `&amp;` sign
+            2. A comment — marked by the `#` sign
+            3. A sign that specifies how newlines should be handled —
+               marked by `|` or `&gt;`)
+    ^\s*[^\s#]+:(\s*|\s*[&gt;\|&amp;#].*)$ |
+    (?# We can fold a list item which contains multiple mappings. We actually
+        match here against only one mapping after the list indicator, but
+        since it usually does not make that much sense to generate a 
+        dictionary with only one key, we should be fine. We also require at 
+        least one space after the colon, since otherwise we would also match 
+        URLs such as http://example.com)
+    ^\s*-\s*[^\s#]+:\s+[^\s#]+.*$</string>
 	</dict>
 	<key>uuid</key>
 	<string>38D0A8EE-DA69-457B-99DA-1559256DE8A7</string>
