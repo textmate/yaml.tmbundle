@@ -19,7 +19,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^(\s*)(?:(-)|(?:(-\s*)?(\w+\s*(:))))\s*(\||&gt;)</string>
+			<string>^(\s*)(?:(-)|(?:(-\s*)?(\S+\s*(:))))\s*(\||&gt;)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>2</key>
@@ -44,7 +44,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>^(?!^\1)|^(?=\1(-|\w+\s*:)|#)</string>
+			<string>^((?=\s*#(?!#))|(?!\1\s+)(?=\s*(-|\S+\s*:)|#))</string>
 			<key>name</key>
 			<string>string.unquoted.block.yaml</string>
 			<key>patterns</key>
