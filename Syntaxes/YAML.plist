@@ -350,14 +350,6 @@
 			<string>keyword.operator.merge-key.yaml</string>
 		</dict>
 		<dict>
-			<key>disabled</key>
-			<string>1</string>
-			<key>match</key>
-			<string>( |	)+$</string>
-			<key>name</key>
-			<string>invalid.deprecated.trailing-whitespace.yaml</string>
-		</dict>
-		<dict>
 			<key>begin</key>
 			<string>(^[ \t]+)?(?&lt;!\$)(?=#)(?!#\{)</string>
 			<key>beginCaptures</key>
@@ -395,34 +387,6 @@
 			<string>-</string>
 			<key>name</key>
 			<string>keyword.operator.symbol</string>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>^(?=\t)</string>
-			<key>end</key>
-			<string>(?=[^\t])</string>
-			<key>name</key>
-			<string>meta.leading-tabs.yaml</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>meta.odd-tab</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>meta.even-tab</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>(\t)(\t)?</string>
-				</dict>
-			</array>
 		</dict>
 	</array>
 	<key>repository</key>
