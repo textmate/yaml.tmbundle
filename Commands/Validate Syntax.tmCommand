@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby18
+require ENV['TM_SUPPORT_PATH'] + '/lib/textmate'
+require 'yaml'
+
+begin
+  YAML.load(STDIN.read)
+rescue ArgumentError =&gt; error
+end
+
+if error.nil?
+  puts "Valid YAML, no errors"
+else
+  puts "ERROR: ",error.message, "\n"
+  TextMate.go_to :line =&gt; $1, :column =&gt; ($2.to_i + 1) if error.message =~ /line (\d+).*col (\d+)/
+end
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^V</string>
+	<key>name</key>
+	<string>Validate Syntax</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
+	<key>scope</key>
+	<string>source.yaml</string>
+	<key>uuid</key>
+	<string>249C3B83-1F1D-4563-A5B7-DC208820BEA1</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
