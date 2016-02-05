@@ -11,13 +11,9 @@ require 'yaml'
 
 begin
   YAML.load(STDIN.read)
-rescue ArgumentError =&gt; error
-end
-
-if error.nil?
   puts "Valid YAML, no errors"
-else
-  puts "ERROR: ",error.message, "\n"
+rescue ArgumentError =&gt; error
+  puts error.message
   TextMate.go_to :line =&gt; $1, :column =&gt; ($2.to_i + 1) if error.message =~ /line (\d+).*col (\d+)/
 end
 </string>
