@@ -220,12 +220,12 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.block.scalar.literal.yaml</string>
+					<string>keyword.control.flow.block-scalar.literal.yaml</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.block.scalar.folded.yaml</string>
+					<string>keyword.control.flow.block-scalar.folded.yaml</string>
 				</dict>
 				<key>3</key>
 				<dict>
@@ -235,7 +235,7 @@
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>support.other.chomping-indicator.yaml</string>
+					<string>storage.modifier.chomping-indicator.yaml</string>
 				</dict>
 				<key>5</key>
 				<dict>
