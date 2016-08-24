@@ -410,7 +410,7 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.alias.yaml</string>
+					<string>punctuation.definition.alias.yaml</string>
 				</dict>
 				<key>3</key>
 				<dict>
@@ -1093,7 +1093,7 @@
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.anchor.yaml</string>
+							<string>punctuation.definition.anchor.yaml</string>
 						</dict>
 						<key>3</key>
 						<dict>
