@@ -6,6 +6,12 @@
 	<array>
 		<string>yaml</string>
 		<string>yml</string>
+		<string>rviz</string>
+		<string>reek</string>
+		<string>clang-format</string>
+		<string>yaml-tmlanguage</string>
+		<string>syntax</string>
+		<string>sublime-syntax</string>
 	</array>
 	<key>keyEquivalent</key>
 	<string>^~Y</string>
