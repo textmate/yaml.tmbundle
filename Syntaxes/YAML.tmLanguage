@@ -13,6 +13,8 @@
 		<string>syntax</string>
 		<string>sublime-syntax</string>
 	</array>
+	<key>firstLineMatch</key>
+	<string>^%YAML( ?1.\d+)?</string>
 	<key>keyEquivalent</key>
 	<string>^~Y</string>
 	<key>name</key>
