@@ -116,7 +116,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.separator.mapping.key-value.yaml</string>
+							<string>punctuation.separator.key-value.mapping.yaml</string>
 						</dict>
 						<key>2</key>
 						<dict>
@@ -198,7 +198,7 @@
 					<key>match</key>
 					<string>:(?=\s|$)</string>
 					<key>name</key>
-					<string>punctuation.separator.mapping.key-value.yaml</string>
+					<string>punctuation.separator.key-value.mapping.yaml</string>
 				</dict>
 			</array>
 		</dict>
@@ -545,7 +545,7 @@
 								<key>0</key>
 								<dict>
 									<key>name</key>
-									<string>punctuation.separator.mapping.key-value.yaml</string>
+									<string>punctuation.separator.key-value.mapping.yaml</string>
 								</dict>
 							</dict>
 							<key>end</key>
@@ -638,7 +638,7 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.separator.mapping.key-value.yaml</string>
+							<string>punctuation.separator.key-value.mapping.yaml</string>
 						</dict>
 					</dict>
 					<key>end</key>
