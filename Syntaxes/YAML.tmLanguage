@@ -271,7 +271,7 @@
 		<key>block-sequence</key>
 		<dict>
 			<key>match</key>
-			<string>(-)( |\t|$)</string>
+			<string>(-)(?!\S)</string>
 			<key>name</key>
 			<string>punctuation.definition.block.sequence.item.yaml</string>
 		</dict>
